@@ -1,0 +1,39 @@
+# Pascal sources: normalize as text (LF in repo), platform-native in working tree
+*.pas  text
+*.pp   text
+*.inc  text
+
+# Project + docs
+*.lpi  text
+*.lpr  text
+*.xml  text
+*.json text
+*.yml  text
+*.yaml text
+*.toml text
+*.cfg  text
+*.ini  text
+*.txt  text
+*.md   text
+Makefile text
+
+# Scripts
+*.sh   text eol=lf
+*.bat  text eol=crlf
+*.cmd  text eol=crlf
+
+# Binaries/data
+*.exe  binary
+*.dll  binary
+*.so   binary
+*.dylib binary
+*.o    binary
+*.a    binary
+*.zip  binary
+*.tar  binary
+*.gz   binary
+*.dat  binary
+*.db   binary
+
+# Fallback
+* text=auto
