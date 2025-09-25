@@ -1,3 +1,6 @@
+{$IFDEF FPC}
+        {$MODE TP}
+{$ENDIF}
 PROGRAM BBSInfo; {RGAPI Example Program}
    {This program is designed to read the RENEGADE.DAT file and display  }
    {the system information outlined in that file.                       }

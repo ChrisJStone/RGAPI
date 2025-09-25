@@ -1,3 +1,6 @@
+{$IFDEF FPC}
+        {$MODE TP}
+{$ENDIF}
 PROGRAM MSGDisp; {RGAPI Example Program}
    {This program is designed to read the MBASES.DAT file, and display   }
    {all the message areas available.                                    }
