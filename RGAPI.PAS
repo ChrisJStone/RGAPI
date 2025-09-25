@@ -1,3 +1,6 @@
+{$IFDEF FPC}
+        {$MODE TP}
+{$ENDIF}
 UNIT RGApi;
 
 INTERFACE
@@ -333,13 +336,13 @@ BEGIN
   (*************************************************************************)
   UnixDate := UnixDate - (GetTimeZone * SecsPerHour);
 
-  IF D > 1 THEN                                 
+  IF D > 1 THEN
     Inc(UnixDate,(SecsPerDay * (D-1)));
 
   IF IsLeapYear(Y) THEN
     DaysPerMonth[02] := 29
   ELSE
-    DaysPerMonth[02] := 28;                     
+    DaysPerMonth[02] := 28;
 
   Index := 1;
   IF M > 1 THEN FOR Index := 1 TO (M-1) DO

@@ -1,7 +1,8 @@
 # Pascal sources: normalize as text (LF in repo), platform-native in working tree
-*.pas  text
-*.pp   text
-*.inc  text
+# Pascal sources (case-insensitive patterns)
+*.[Pp][Aa][Ss] text
+*.[Pp][Pp]     text
+*.[Ii][Nn][Cc] text
 
 # Project + docs
 *.lpi  text
